@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# Uchimo 🌱  
+**悩みを分かち合う、優しいSNS**
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+![Built with React Native](https://img.shields.io/badge/built%20with-React%20Native-blue)
 
-## Get started
+## 🔍 概要
 
-1. Install dependencies
+**Uchimo** は、「オンライン上のグループカウンセリング」をコンセプトとした SNS アプリです。  
+投稿は「悩みのカテゴリ別スレッド」に分類され、返信やDM機能はあえて排除し、共感リアクションのみが得られる安心感のある交流体験を提供します。
+また、同一スレッドの一日の一人当たりの投稿数を1回に制限することで、グループカウンセリングとしての体裁を整えています。
 
-   ```bash
-   npm install
-   ```
+このリポジトリでは、React Native（Expo）および Firebase を用いたユニバーサルアプリのフロントエンドコードを管理しています。
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 🧩 主な機能（本コードの対象部分）
 
-In the output, you'll find options to open the app in a
+- スレッド一覧の取得・表示（新着順 / 投稿数順の並び替え）
+- スレッドの検索（タイトル・タグ）
+- お気に入り登録（ブックマーク機能）
+- 無限スクロールによるスレッドの追加取得
+- ログインユーザーに応じたフィルター・表示切替
+- Firebase Firestore との連携（データ取得・書き込み）
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🛠️ 技術スタック
 
-## Get a fresh project
+| 項目 | 技術 |
+|------|------|
+| フレームワーク | React Native + Expo |
+| 状態管理 | React Hooks (`useState`, `useEffect`, `useMemo`, etc.) |
+| ルーティング | `expo-router` |
+| バックエンド | Firebase Firestore / Firebase Authentication |
+| UI | Tailwind CSS for React Native (via `className` with NativeWindなど想定) |
 
-When you're ready, run:
+---
 
-```bash
-npm run reset-project
+
+## 📁 ディレクトリ構成（抜粋）
+
+```
+/components
+  └─ AnimatedBookmark.tsx     // お気に入りアイコンのアニメーション
+/hooks
+  └─ useProtectedRoute.ts     // 認証状態のルーティング保護
+/lib
+  └─ firebase.ts              // Firebase 初期化
+/screens
+  └─ HomeScreen.tsx           // スレッド一覧画面（本コード）
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+---
 
-## Learn more
 
-To learn more about developing your project with Expo, look at the following resources:
+## 🙌 作者
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+- 名前: 今吉明日翔（Asuka Imayoshi）  
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## 🖼️ スクリーンショット（例）
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+
+## 🖼️ スクリーンショット（例）
+
+※ここにアプリの画面キャプチャ（スレッド検索・お気に入り登録など）を挿入すると、より魅力が伝わります。
