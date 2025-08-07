@@ -26,8 +26,7 @@ import GambarouIcon from '../../assets/icons/gambarou.svg';
 import PostIcon from '../../assets/icons/post.svg';
 import { ReactionButton } from '../../components/ReactionButton';
 import { AnimatedBookmark } from '../../components/AnimatedBookmark';
-//android,ios,の場合はオン
-// import mobileAds, { BannerAd, BannerAdSize, TestIds } from 'react-native-google-mobile-ads';
+
 
 
 
@@ -123,21 +122,6 @@ export default function ThreadScreen() {
     }
   };
 
-    // インタースティシャル広告
-//       const showInterstitialAdOncePerMinute = async (
-//       ) => {
-//         const now = Date.now();
-//         if (now - lastShown < 60 * 1000) return; // 1分以内はスキップ
-//
-//         try {
-//           await AdMobInterstitial.setAdUnitID('ca-app-pub-3940256099942544/1033173712');
-//           await AdMobInterstitial.requestAdAsync({ servePersonalizedAds: true });
-//           await AdMobInterstitial.showAdAsync();
-//           lastShown = now;
-//         } catch (e) {
-//           console.warn(e);
-//         }
-//       }
 
   // トグル式リアクション
     const handleReaction = async (
@@ -235,19 +219,6 @@ export default function ThreadScreen() {
     return unsub;
   }, []);
 
-    if (Platform.OS === 'ios' || Platform.OS === 'android') {
-      // iOS または Android の場合に実行するコード
-      // アプリの初回起動時にSDKを初期化
-        useEffect(() => {
-            mobileAds()
-                .initialize()
-                .then(() => {
-                    console.log('AdMob SDK initialized');
-                });
-        }, []);
-
-        // テスト広告の設定
-        const adUnitId = "ca-app-pub-7629188017539632/9070386798";
     }
 
 
