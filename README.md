@@ -40,14 +40,63 @@
 ##　ディレクトリ構成（抜粋）
 
 ```
-/components
-  └─ AnimatedBookmark.tsx     // お気に入りアイコンのアニメーション
-/hooks
-  └─ useProtectedRoute.ts     // 認証状態のルーティング保護
-/lib
-  └─ firebase.ts              // Firebase 初期化
-/screens
-  └─ HomeScreen.tsx           // スレッド一覧画面（本コード）
++---app
+|   |   +not-found.tsx
+|   |   login.tsx
+|   |   more-favorite-threads.tsx
+|   |   more-my-posts.tsx
+|   |   myProfile.tsx
+|   |   setProfile.tsx
+|   |   signup.tsx
+|   |   _layout.tsx
+|   |   
+|   +---(tabs)
+|   |       index.tsx
+|   |       mypage.tsx
+|   |       _layout.tsx
+|   |       
+|   +---post
+|   |   \---[slug]
+|   |           new.tsx
+|   |           
+|   +---profile
+|   |   |   [user_id].tsx
+|   |   |   
+|   |   \---[user_id]
+|   |           other-more-favorite-threads.tsx
+|   |           other-more-my-posts.tsx
+|   |           
+|   \---thread
+|           [slug].tsx
+|           
++---assets
+|   +---fonts
+|   +---icons   
+|   \---images
+|           
++---components
+|   |   AnimatedBookmark.tsx
+|   |   Collapsible.tsx
+|   |   ExternalLink.tsx
+|   |   HapticTab.tsx
+|   |   HelloWave.tsx
+|   |   LogoutButton.tsx
+|   |   ParallaxScrollView.tsx
+|   |   ReactionButton.tsx
+|   |   ThemedText.tsx
+|   |   ThemedView.tsx
+|   |   
+|   \---ui
+|           IconSymbol.ios.tsx
+|           IconSymbol.tsx
+|           TabBarBackground.ios.tsx
+|           TabBarBackground.tsx
+|           
++---hooks
+|       useColorScheme.ts
+|       useColorScheme.web.ts
+|       useProtectedRoute.ts
+|       useThemeColor.ts
 ```
 
 ---
