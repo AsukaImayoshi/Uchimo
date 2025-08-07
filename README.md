@@ -61,11 +61,11 @@
 
 ## スクリーンショット（例）
 - ホーム画面
-![ホーム画面](assets/images/Web_5-8-2025_142143_localhost.jpeg)
+- ![ホーム画面](assets/images/Web_5-8-2025_142143_localhost.jpeg)
 - マイページ画面
-![マイページ画面](assets/images/Web_5-8-2025_14230_localhost.jpeg)
+- ![マイページ画面](assets/images/Web_5-8-2025_14230_localhost.jpeg)
 - スレッド画面
-![スレッド画面](assets/images/Web_5-8-2025_142237_localhost.jpeg)
+- ![スレッド画面](assets/images/Web_5-8-2025_142237_localhost.jpeg)
 - Android版画面
-![android版画面](assets/images/Screenshot_20250805_190618.png)
+- ![android版画面](assets/images/Screenshot_20250805_190618.png)
 
